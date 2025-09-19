@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Web Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 left-0 z-10 bg-white/90 backdrop-blur-md shadow">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <h1 class="text-xl font-bold text-indigo-600">Creative Web</h1>
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="#home" class="hover:text-yellow-500">Home</a>
+        <a href="#services" class="hover:text-yellow-500">Services</a>
+        <a href="#work" class="hover:text-yellow-500">Work</a>
+        <a href="#contact" class="hover:text-yellow-500">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden p-2 text-indigo-600">☰</button>
+    </div>
+    <nav id="mobile-menu" class="hidden flex-col bg-white shadow md:hidden">
+      <a href="#home" class="px-6 py-3 border-b">Home</a>
+      <a href="#services" class="px-6 py-3 border-b">Services</a>
+      <a href="#work" class="px-6 py-3 border-b">Work</a>
+      <a href="#contact" class="px-6 py-3">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="pt-24 pb-20 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white text-center">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">Creative Web Solutions</h2>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6" data-aos="fade-up" data-aos-delay="200">
+      We build modern, colorful & engaging digital experiences.
+    </p>
+    <a href="#services" class="px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold rounded-lg shadow hover:scale-105 transition">
+      Explore Services
+    </a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gradient-to-r from-teal-500 via-cyan-500 to-indigo-500 text-white text-center">
+    <h3 class="text-3xl font-bold mb-10" data-aos="zoom-in">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      <div class="p-6 bg-white/20 backdrop-blur-lg rounded-xl shadow hover:scale-105 transition" data-aos="fade-up">
+        <h4 class="text-xl font-semibold mb-2 text-yellow-300">Web Development</h4>
+        <p>Responsive & colorful websites tailored to your needs.</p>
+      </div>
+      <div class="p-6 bg-white/20 backdrop-blur-lg rounded-xl shadow hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-semibold mb-2 text-yellow-300">UI/UX Design</h4>
+        <p>Clean, modern, and user-friendly designs for your business.</p>
+      </div>
+      <div class="p-6 bg-white/20 backdrop-blur-lg rounded-xl shadow hover:scale-105 transition" data-aos="fade-up" data-aos-delay="400">
+        <h4 class="text-xl font-semibold mb-2 text-yellow-300">IoT Solutions</h4>
+        <p>Smart & creative IoT-based applications with real-world impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="py-16 bg-gray-100">
+    <h3 class="text-3xl font-bold text-indigo-600 text-center mb-10" data-aos="fade-up">Our Work</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6">
+      <div class="relative group" data-aos="zoom-in">
+        <img src="https://source.unsplash.com/400x300/?website,design" class="rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-cyan-500 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-lg">
+          <span class="text-white font-semibold">Website Project</span>
+        </div>
+      </div>
+      <div class="relative group" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://source.unsplash.com/400x300/?app,ui" class="rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-yellow-400 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-lg">
+          <span class="text-white font-semibold">App Interface</span>
+        </div>
+      </div>
+      <div class="relative group" data-aos="zoom-in" data-aos-delay="400">
+        <img src="https://source.unsplash.com/400x300/?iot,technology" class="rounded-lg shadow-lg">
+        <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-400 flex items-center justify-center opacity-0 group-hover:opacity-100 transition rounded-lg">
+          <span class="text-white font-semibold">IoT Project</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white">
+    <h3 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Get In Touch</h3>
+    <form class="max-w-3xl mx-auto bg-white/20 backdrop-blur-lg p-8 rounded-xl shadow space-y-4" data-aos="fade-up">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-white/80 text-black">
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-white/80 text-black">
+      <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded bg-white/80 text-black"></textarea>
+      <button class="px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold rounded-lg shadow hover:scale-105 transition">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow py-6 text-center text-gray-600">
+    © 2025 Creative Web Solutions | All Rights Reserved
+  </footer>
+
+  <script>
+    AOS.init();
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
